@@ -29,6 +29,14 @@ var myApp = require('../app/library.js');
         expect(myApp.aritGeo([15, 10, 5, 0, -5, -10])).toEqual('Arithmetic');
       });
 
+      it("should return `Arithmetic` for [12, 14, 16, 18, 20]", function() {
+        expect(myApp.aritGeo([12, 14, 16, 18, 20])).toEqual('Arithmetic');
+      });
+
+      it("should return `Arithmetic` for [10, 20 , 30, 40, 50]", function() {
+        expect(myApp.aritGeo([10, 20 , 30, 40, 50])).toEqual('Arithmetic');
+      });
+
     });
 
     describe("Case for a geometric sequence", function() {
