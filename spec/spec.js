@@ -53,6 +53,14 @@ var myApp = require('../app/library.js');
         expect(myApp.aritGeo([-128, 64, -32, 16, -8])).toEqual('Geometric');
       });
 
+      it("should return `Geometric` for [64, 32, 16, 8, 4]", function() {
+        expect(myApp.aritGeo([64, 32, 16, 8, 4])).toEqual('Geometric');
+      });
+
+      it("should return `Geometric` for [-7, 21, -63, 189]", function() {
+        expect(myApp.aritGeo([-7, 21, -63, 189])).toEqual('Geometric');
+      });
+
     });
 
     describe("Case for neither arithmetic nor geometric sequence", function() {
