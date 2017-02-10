@@ -1,4 +1,7 @@
-function aritGeo(array)
+
+
+
+exports.aritGeo = function(array)
 {
 
 	if (array.length === 0)
